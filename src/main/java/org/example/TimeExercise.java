@@ -15,6 +15,7 @@ public class TimeExercise {
         DateTimeFormatter dTForm = DateTimeFormatter.ofPattern("EEEE dd MMM ");
         String formattedDate = dTF.format(dTForm);
         System.out.println(formattedDate);
+
         LocalDate lastMonday= LocalDate.of(2023, 07, 03);
         System.out.println("lastMonday = " + lastMonday);
         LocalDate lastSunday= LocalDate.of(2023, 07, 10);
@@ -22,6 +23,15 @@ public class TimeExercise {
         {
             System.out.println(date);
         }
+
+
+        LocalDate str = LocalDate.parse("2023-07-12");
+        System.out.println("LocalDate : " + str);
+
+
+
+
+
 
 
 
