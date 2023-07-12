@@ -1,10 +1,12 @@
 package org.example;
 
 import java.time.LocalDate;
+import java.time.temporal.Temporal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.DayOfWeek;
 import java.time.*;
+import java.time.Period;
 import java.time.temporal.ChronoField;
 
 public class TimeExercise {
@@ -50,7 +52,16 @@ public class TimeExercise {
         LocalDate startnew_date = LocalDate.of(1945, 5, 8);
         LocalDate endnew_date = LocalDate.of(1990, 7, 25);
         findDiff(startnew_date, endnew_date);
+        System.out.println("\n");
         /* ex:8*/
+        LocalDate todayEx8 = LocalDate.now();
+        Period p = Period.of(4, 7, 29);
+        Temporal t = p.addTo(todayEx8);
+        System.out.println("t = " + t);
+
+
+
+
 
 
     }
