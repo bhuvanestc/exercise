@@ -58,6 +58,11 @@ public class TimeExercise {
         Period p = Period.of(4, 7, 29);
         Temporal t = p.addTo(todayEx8);
         System.out.println("t = " + t);
+        System.out.println("\n");
+        /* ex:9*/
+        LocalTime localTime = LocalTime.now();
+        System.out.println("localTime = " + localTime);
+        System.out.println("\n");
 
 
 
