@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.DayOfWeek;
 import java.time.*;
 import java.time.Period;
+import java.lang.*;
 import java.time.temporal.ChronoField;
 
 public class TimeExercise {
@@ -63,9 +64,13 @@ public class TimeExercise {
         LocalTime localTime = LocalTime.now();
         System.out.println("localTime = " + localTime);
         System.out.println("\n");
-
-
-
+        /* ex:10*/
+        System.out.print("time in nanoseconds of current time = ");
+        System.out.println(System.nanoTime());
+        System.out.println("\n"); /* doubts*/
+        /* ex: 11*/
+        LocalTime ex11 = LocalTime.parse("11:11:11");
+        System.out.println("LocalTime : " + ex11);
 
 
 
