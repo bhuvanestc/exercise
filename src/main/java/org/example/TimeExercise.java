@@ -1,6 +1,8 @@
 package org.example;
 
 import java.time.LocalDate;
+import java.text.Format;
+import java.text.SimpleDateFormat;
 import java.time.temporal.Temporal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -8,7 +10,10 @@ import java.time.DayOfWeek;
 import java.time.*;
 import java.time.Period;
 import java.lang.*;
+import java.util.Date;
 import java.time.temporal.ChronoField;
+
+import static java.time.format.DateTimeFormatter.ofLocalizedTime;
 
 public class TimeExercise {
     public static void main(String[] args) {
@@ -71,7 +76,16 @@ public class TimeExercise {
         /* ex: 11*/
         LocalTime ex11 = LocalTime.parse("11:11:11");
         System.out.println("LocalTime : " + ex11);
-
+        System.out.println("\n");
+        /* ex: 12*/
+        Format f = new SimpleDateFormat("HH.mm.ss");
+        String strResult = f.format(new Date());
+        System.out.println("Time : "+strResult);
+        System.out.println("\n");
+        /* ex: 13*/
+        LocalDateTime ex13 = LocalDateTime.now();
+        System.out.println("Date: " + ex13); /* doubts*/
+        System.out.println("\n");
 
 
     }
