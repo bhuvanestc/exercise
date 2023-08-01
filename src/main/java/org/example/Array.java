@@ -37,15 +37,11 @@ public class Array {
           {
                Array2[i] = Array1[i];
           }
-
-
           System.out.print("Elements from first array: ");
           for (int num : Array1) {
                System.out.print(num + " ");
           }
           System.out.println();
-
-          // Print the elements of the destination array
           System.out.print("Elements from second array: ");
           for (int num : Array2) {
                System.out.print(num + " ");
