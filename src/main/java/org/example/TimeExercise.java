@@ -86,11 +86,20 @@ public class TimeExercise {
         LocalDateTime ex13 = LocalDateTime.now();
         System.out.println("Date: " + ex13); /* doubts*/
         System.out.println("\n");
+        /* ex:15*/
+        LocalDate ex15date = LocalDate.now();
+        LocalTime  ex15time = LocalTime.now();
+        LocalDateTime combined_dt = LocalDateTime.of(ex15date,ex15time);
+        System.out.println("Combined Date and Time: " + combined_dt);
+        System.out.println("\n");
+        /* ex:16*/
+
 
 
     }
 
-    private static void findDifference(LocalDate start_date, LocalDate end_date) {
+    private static void findDifference(LocalDate start_date, LocalDate end_date)
+    {
         Period diff = Period.between(start_date, end_date);
         System.out.print("Difference " + "between two dates is: ");
         System.out.printf("%d years, %d months" + " and %d days ", diff.getYears(), diff.getMonths(), diff.getDays());
