@@ -38,15 +38,42 @@ public class Array {
                Array2[i] = Array1[i];
           }
           System.out.print("Elements from first array: ");
-          for (int num : Array1) {
+          for (int num : Array1)
+          {
                System.out.print(num + " ");
           }
           System.out.println();
           System.out.print("Elements from second array: ");
-          for (int num : Array2) {
+          for (int num : Array2)
+          {
                System.out.print(num + " ");
           }
           System.out.println();
+
+          System.out.println("ex:5");
+          String[][] countryandcity= new String[2][2];
+          countryandcity[0][0] = "France";
+          countryandcity[0][1] = "Paris";
+          countryandcity[1][0] = "Sweden";
+          countryandcity[1][1] = "Stockholm";
+
+
+          for (int i = 0; i < 2; i++) {
+               for (int j = 0; j < 2; j++) {
+                    System.out.print(countryandcity[i][j] + " ");
+               }
+               System.out.println();
+          }
+          System.out.println("ex:6");
+          int [] num6 ={43, 5, 23, 17, 2, 14 };
+          int sum6= 0;
+          for (int num : num6)
+          {
+               sum6 += num;
+          }
+          float average = (float) sum6 / num6.length;
+          System.out.println("Average is: " + average);
+
 
      }
 
