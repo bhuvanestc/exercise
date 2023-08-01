@@ -64,6 +64,7 @@ public class Array {
                }
                System.out.println();
           }
+
           System.out.println("ex:6");
           int [] num6 ={43, 5, 23, 17, 2, 14 };
           int sum6= 0;
@@ -71,15 +72,67 @@ public class Array {
           {
                sum6 += num;
           }
-          float average = (float) sum6 / num6.length;
-          System.out.println("Average is: " + average);
+          double average = (double) sum6 / num6.length;
+          String formattedaverage = String.format("%.1f", average);
+          System.out.println("Average is: " + formattedaverage);
+          System.out.println("ex:7");
+          int[] numbers7 = {1, 2, 4, 7, 9, 12};
+          System.out.print("Array: ");
+          for (int num : numbers7) {
+               System.out.print(num + " ");
+          }
+          System.out.println();
+          System.out.print("Uneven Array: ");
+          for (int num : numbers7) {
+               if (num % 2 != 0) {
+                    System.out.print(num + " ");
+               }
+          }
+          System.out.println();
+          System.out.println("ex:8");
+
+          System.out.println("ex:9");
+          int[] originalArray = {1, 2, 3, 4, 5};
+          int new_value = 6;
+          int[] newArray = addNew_value(originalArray, new_value);
+          System.out.println("Original array: " + Arrays.toString(originalArray));
+          System.out.println("Expanded array: " + Arrays.toString(newArray));
+          System.out.println("ex:10, Multiplication Table");
+          int[][] multiplicationTable = new int[10][10];
+          for (int i = 0; i < 10; i++) {
+               for (int j = 0; j < 10; j++) {
+                    multiplicationTable[i][j] = (i + 1) * (j + 1);
+               }
+          }
+          for (int i = 0; i < 10; i++) {
+               for (int j = 0; j < 10; j++) {
+                    System.out.print(multiplicationTable[i][j] + "\t");
+               }
+               System.out.println();
+          }
+
+
 
 
      }
 
-               public static int indexOf(int[] arr, int target)
-               {
-                    for (int i = 0; i < arr.length; i++)
+     /*ex:9*/
+     public static int[] addNew_value(int[] arr, int element)
+     {
+          int[] expandedArray = new int[arr.length + 1];
+          for (int i = 0; i < arr.length; i++)
+          {
+               expandedArray[i] = arr[i];
+          }
+          expandedArray[arr.length] = element;
+
+          return expandedArray;
+
+
+     }
+     public static int indexOf(int[] arr, int target)
+     {
+          for (int i = 0; i < arr.length; i++)
                     {
                          if (arr[i] == target) {
                               return i;
