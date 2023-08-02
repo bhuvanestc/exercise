@@ -2,7 +2,7 @@ package org.example;
 import java.util.Arrays;
 
 public class Namerepository {
-    public static String[] names;
+    private static String[] names;
 
     public static int getSize(){
         if(names==null)
