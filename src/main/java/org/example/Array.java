@@ -9,7 +9,11 @@ public class Array {
           for (int number : numbers)
           {
                System.out.println(number);
+
           }
+
+
+
           /*ex:2*/
           int[] num2 = {10, 30, 5, 8, 9};
           int element = 5;
@@ -29,6 +33,7 @@ public class Array {
           System.out.println("Array: " + Arrays.toString(cities));
           Arrays.sort(cities);
           System.out.println("Sorted Array: " + Arrays.toString(cities));
+
           /*ex:4*/
           int[] Array1 = {1, 15, 20};
           System.out.println("ex:4");
@@ -75,6 +80,8 @@ public class Array {
           double average = (double) sum6 / num6.length;
           String formattedaverage = String.format("%.1f", average);
           System.out.println("Average is: " + formattedaverage);
+
+
           System.out.println("ex:7");
           int[] numbers7 = {1, 2, 4, 7, 9, 12};
           System.out.print("Array: ");
@@ -97,6 +104,7 @@ public class Array {
           int[] newArray = addNew_value(originalArray, new_value);
           System.out.println("Original array: " + Arrays.toString(originalArray));
           System.out.println("Expanded array: " + Arrays.toString(newArray));
+
           System.out.println("ex:10, Multiplication Table");
           int[][] multi = new int[10][10];
           for (int i = 0; i < 10; i++) {
