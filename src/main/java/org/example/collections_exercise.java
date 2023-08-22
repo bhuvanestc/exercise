@@ -7,9 +7,7 @@ import java.util.Set;
 public class collections_exercise {
     public static void main(String[] args) {
 
-        ex8();
-
-
+        ex10();
 
 
     }
@@ -87,9 +85,10 @@ public class collections_exercise {
             System.out.println(day);
         }
     }
+
     public static void ex5() {
         System.out.println("ex:5");
-        HashSet<String> daysofWeek5= new HashSet<>();
+        HashSet<String> daysofWeek5 = new HashSet<>();
         daysofWeek5.add("Monday");
         daysofWeek5.add("Tuesday");
         daysofWeek5.add("Wednesday");
@@ -113,7 +112,7 @@ public class collections_exercise {
 
     public static void ex6() {
         System.out.println("ex:6");
-        Set<String> daysofWeekSet= new HashSet<>();
+        Set<String> daysofWeekSet = new HashSet<>();
 
         daysofWeekSet.add("Monday");
         daysofWeekSet.add("Tuesday");
@@ -122,22 +121,20 @@ public class collections_exercise {
         daysofWeekSet.add("Friday");
         daysofWeekSet.add("Saturday");
         daysofWeekSet.add("Sunday");
-        List <String> daysofWeekList = new ArrayList<> (daysofWeekSet);
+        List<String> daysofWeekList = new ArrayList<>(daysofWeekSet);
         Collections.sort(daysofWeekList);
 
         System.out.println("Days of the Week list");
-        for (String day : daysofWeekList)
-
-        {
+        for (String day : daysofWeekList) {
             System.out.println(day);
         }
 
     }
-    public static void ex7()
-    {
+
+    public static void ex7() {
         System.out.println("ex:7");
 
-        HashSet<String> randomnames= new HashSet<>();
+        HashSet<String> randomnames = new HashSet<>();
         randomnames.add("Bob");
         randomnames.add("David");
         randomnames.add("Anna");
@@ -149,30 +146,62 @@ public class collections_exercise {
         Collections.sort(sortedList);
 
         System.out.println("Sorted names");
-        for (String name: sortedList) {
+        for (String name : sortedList) {
             System.out.println(name);
         }
 
     }
-    public static void ex8()
-    {
 
-        HashSet<String> randomnames= new HashSet<>();
+    public static void ex8() {
+
+        HashSet<String> randomnames = new HashSet<>();
         randomnames.add("Bob");
         randomnames.add("David");
         randomnames.add("Anna");
         randomnames.add("Carlberg");
 
         System.out.println(randomnames);
-        Set<String> sortednames= new TreeSet<>(randomnames);
+        Set<String> sortednames = new TreeSet<>(randomnames);
 
 
         System.out.println("Sorted names");
-        for (String name: sortednames) {
+        for (String name : sortednames) {
             System.out.println(name);
+        }
+    }
+
+    public static void ex9()
+    {
+        Map<Integer, String> carMap = new HashMap<>();
+
+        carMap.put(1, "Tesla");
+        carMap.put(2, "Hundai");
+        carMap.put(3, "Ford");
+        carMap.put(4, "BMW");
+        System.out.println("Car ID to Car Mapping:");
+        for (Map.Entry<Integer, String> entry : carMap.entrySet()) {
+            int id = entry.getKey();
+            String car = entry.getValue();
+            System.out.println("ID: " + id + ", Car: " + car);
+
         }
 
     }
+    public static void ex10()
+    {
+        Map<Integer, String> carMap = new HashMap<>();
 
+        carMap.put(1, "Tesla");
+        carMap.put(2, "Hundai");
+        carMap.put(3, "Ford");
+        carMap.put(4, "BMW");
+        System.out.println("Car ID to Car Mapping:");
+        for (Map.Entry<Integer, String> entry : carMap.entrySet()) {
+            int id = entry.getKey();
+            System.out.println("ID: " + id );
+
+        }
+
+    }
 
 }
