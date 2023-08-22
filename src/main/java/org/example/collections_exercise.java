@@ -2,12 +2,23 @@ package org.example;
 import java.util.*;
 import java.util.HashSet;
 import java.util.Set;
+import  org.example.Car;
 
 
 public class collections_exercise {
     public static void main(String[] args) {
-
-        ex10();
+ex1();
+ex2();
+ex3();
+ex4();
+ex5();
+ex6();
+ex7();
+ex8();
+ex9();
+ex10();
+ex11();
+ex12();
 
 
     }
@@ -203,5 +214,43 @@ public class collections_exercise {
         }
 
     }
+    public static void ex11()
+    {
+        Map<Integer, String> carMap = new HashMap<>();
+
+        carMap.put(1, "Tesla");
+        carMap.put(2, "Hundai");
+        carMap.put(3, "Ford");
+        carMap.put(4, "BMW");
+        System.out.println("Car ID to Car Mapping:");
+        for (Map.Entry<Integer, String> entry : carMap.entrySet()) {
+            String car = entry.getValue();
+            System.out.println(" Car: " + car);
+
+
+        }
+
+    }
+    public static void ex12()
+    {
+        Map<Integer, Car> carMap = new HashMap<>();
+        Car Car1 = new Car(1,"Tesla","AG12");
+        Car Car2 = new Car(2,"Hundai","AG13");
+        Car Car3 = new Car(3,"Toyota","AG14");
+        Car Car4 = new Car(4,"Ford","AG15");
+
+        carMap.put(1, Car1);
+        carMap.put(2, Car2);
+        carMap.put(3, Car3);
+        carMap.put(4, Car4);
+        System.out.println("Car's brand");
+
+            System.out.println(" Car: " + Car1.Brand);
+            System.out.println(" Car: " + Car2.Brand);
+            System.out.println(" Car: " + Car3.Brand);
+            System.out.println(" Car: " + Car4.Brand);
+
+    }
+
 
 }
