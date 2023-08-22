@@ -11,6 +11,7 @@ public class collection_challenges {
     }
     public static void ex1() {
 
+        
 
         System.out.println("ex:1");
         Set<String> daysofWeek = new TreeSet<>();

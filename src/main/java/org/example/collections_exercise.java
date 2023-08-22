@@ -7,17 +7,17 @@ import  org.example.Car;
 
 public class collections_exercise {
     public static void main(String[] args) {
-ex1();
-ex2();
-ex3();
-ex4();
-ex5();
-ex6();
-ex7();
-ex8();
-ex9();
-ex10();
-ex11();
+//ex1();
+//ex2();
+//ex3();
+//ex4();
+//ex5();
+//ex6();
+//ex7();
+//ex8();
+//ex9();
+//ex10();
+//ex11();
 ex12();
 
 
@@ -245,10 +245,17 @@ ex12();
         carMap.put(4, Car4);
         System.out.println("Car's brand");
 
-            System.out.println(" Car: " + Car1.Brand);
-            System.out.println(" Car: " + Car2.Brand);
-            System.out.println(" Car: " + Car3.Brand);
-            System.out.println(" Car: " + Car4.Brand);
+//            System.out.println(" Car: " + Car1.getBrand());
+//            System.out.println(" Car: " + Car2.Brand);
+//            System.out.println(" Car: " + Car3.Brand);
+//            System.out.println(" Car: " + Car4.Brand);
+        for (Map.Entry<Integer, Car> entry : carMap.entrySet()) {
+            String car = entry.getValue().getBrand();
+            System.out.println(" Car: " + car);
+
+
+        }
+
 
     }
 
